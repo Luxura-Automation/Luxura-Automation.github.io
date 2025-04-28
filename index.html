@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luxura Automation</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -12,7 +13,7 @@
         <div class="container">
             <img src="images/logo.png" alt="Luxura Automation Logo" class="logo">
             <h1>Luxura Automation</h1>
-            <p>Transforming Luxury Spaces with Smart Technology</p>
+            <p>Crafting Intelligent Living Spaces with Smart Innovation</p>
         </div>
     </header>
 
@@ -26,18 +27,62 @@
 
     <section id="about" class="container">
         <h2>About Us</h2>
-        <p>Pioneering the future of luxury living, Luxura Automation blends AI-driven technology with tailored design to create smart homes that anticipate your every need. Redefining security, comfort, and energy efficiency for the elite.</p>
+        <p>At Luxura Automation, we craft intelligent living environments where luxury meets innovation. Our bespoke smart home solutions empower discerning clients in the UAE to experience unmatched convenience, security, and sustainable living.</p>
     </section>
 
     <section id="services" class="container">
         <h2>Our Services</h2>
-        <ul>
-            <li>Custom Smart Home Systems</li>
-            <li>AI-Driven Climate Control</li>
-            <li>Integrated Security Solutions</li>
-            <li>Smart Energy Management</li>
-            <li>Entertainment and Lighting Automation</li>
+        <ul class="services-list">
+            <li onmouseover="showTooltip('Tailored smart systems for ultimate control.')" onmouseout="hideTooltip()" onclick="openModal('modal1')">Custom Smart Home Systems</li>
+            <li onmouseover="showTooltip('AI-powered temperature optimization.')" onmouseout="hideTooltip()" onclick="openModal('modal2')">AI-Driven Climate Control</li>
+            <li onmouseover="showTooltip('Advanced security for luxury living.')" onmouseout="hideTooltip()" onclick="openModal('modal3')">Integrated Security Solutions</li>
+            <li onmouseover="showTooltip('Energy efficiency through smart tech.')" onmouseout="hideTooltip()" onclick="openModal('modal4')">Smart Energy Management</li>
+            <li onmouseover="showTooltip('Seamless audio-visual and lighting control.')" onmouseout="hideTooltip()" onclick="openModal('modal5')">Entertainment and Lighting Automation</li>
         </ul>
+
+        <div id="tooltip" class="tooltip"></div>
+
+        <!-- Modals -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal1')">&times;</span>
+                <h3>Custom Smart Home Systems</h3>
+                <p>We create fully customized AI-powered smart home systems tailored to your lifestyle needs.<br><strong>Starting Price:</strong> AED 15,000</p>
+            </div>
+        </div>
+
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal2')">&times;</span>
+                <h3>AI-Driven Climate Control</h3>
+                <p>Automated temperature management that learns your preferences for perfect comfort.<br><strong>Starting Price:</strong> AED 8,000</p>
+            </div>
+        </div>
+
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal3')">&times;</span>
+                <h3>Integrated Security Solutions</h3>
+                <p>Advanced security integrations including cameras, sensors, and biometric access.<br><strong>Starting Price:</strong> AED 12,000</p>
+            </div>
+        </div>
+
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal4')">&times;</span>
+                <h3>Smart Energy Management</h3>
+                <p>Control lighting and devices efficiently to optimize energy usage and lower costs.<br><strong>Starting Price:</strong> AED 5,500</p>
+            </div>
+        </div>
+
+        <div id="modal5" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal5')">&times;</span>
+                <h3>Entertainment and Lighting Automation</h3>
+                <p>Fully automated entertainment, audio, and mood lighting at your command.<br><strong>Starting Price:</strong> AED 7,000</p>
+            </div>
+        </div>
+
     </section>
 
     <section id="contact" class="container">
